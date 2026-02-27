@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+  <section class="contact">
+        <h1>Contact <span>Us</span></h1>
+        <hr>
+        <p>We value your feedback, inquiries, and suggestions, and we're excited to hear from you. Whether you have
+            a question about our products or services, need assistance with an order, or simply want to share your
+            thoughts, this is the place to reach out to us..</p>
+        <div class="contact-form">
+
+            
+            <form method="POST" action="{% url 'contact' %}">
+                {% csrf_token %}
+                
+                <input type="text" name="name" placeholder="Enter Name" required>
+                <input type="email" name="email" placeholder="Enter E-mail" required>
+                <input type="text" name="phone" placeholder="Enter Phone number" required>
+                <input type="text" name="subject" placeholder="What brings you here?" required>
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                
+                <input type="submit" value="Submit" class="submit-btn">
+            </form>
+        </div>
+
+    </section>
+{% endblock %}
