@@ -112,7 +112,7 @@ python manage.py runserver
 
 
 ## Some Notes
-If you feel that the project is not working as it supposed to work or if you see migrations already applied or no migrations just come in root directory/manage.py level and delete the db.sqlit3 manually or input **rm db.sqlit3** and do all the steps provide above agian
+If you feel that the project is not working as it supposed to work or if you see migrations already applied or no migrations just come in root directory/manage.py level and delete the db.sqlit3 manually or input **rm db.sqlit3** and do all the steps provide above agian.
 
 ## 🌐 Access URLs
 
